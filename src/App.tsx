@@ -6,6 +6,7 @@ import { WaterSelector } from './components/WaterSelector'
 import { OriginInfo } from './components/OriginInfo'
 import { BrewingExplanation } from './components/BrewingExplanation'
 import { getBrewState } from './lib/brew'
+import { BREW_PARAMS } from './data/brewParams'
 import type { WaterType } from './data/types'
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
             Tea Brewing Lab
           </p>
           <h1 className="text-xl font-medium">Anxi Tieguanyin</h1>
+          <p className="mt-1 font-mono text-xs text-stone-400 dark:text-stone-500">
+            {BREW_PARAMS.leafWeight} leaves · {BREW_PARAMS.waterVolume} water · {BREW_PARAMS.temperature}
+          </p>
         </div>
       </header>
 
