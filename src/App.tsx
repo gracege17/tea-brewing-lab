@@ -27,7 +27,11 @@ function App() {
 
       <main className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 py-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
         <section className="flex flex-col items-center gap-6">
-          <TeaVessel color={state.color} leafExpansion={state.leafExpansion} />
+          <TeaVessel
+            color={state.color}
+            leafExpansion={state.leafExpansion}
+            aroma={state.aroma.intensity}
+          />
           <div className="w-full max-w-sm">
             <Timeline value={seconds} onChange={setSeconds} />
           </div>
