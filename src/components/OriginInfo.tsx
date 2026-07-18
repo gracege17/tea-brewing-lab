@@ -1,7 +1,7 @@
 export function OriginInfo() {
   return (
-    <div className="text-sm text-stone-600 dark:text-stone-400">
-      <h2 className="mb-2 text-sm font-medium text-stone-800 dark:text-stone-200">Origin</h2>
+    <div className="text-sm text-stone-600">
+      <h2 className="mb-2 text-sm font-medium text-stone-800">Origin</h2>
       <p>
         Anxi Tieguanyin (&ldquo;Iron Goddess of Mercy&rdquo;) is an oolong tea from Anxi County,
         Fujian Province, in southeastern China. It&rsquo;s grown in misty mountains at

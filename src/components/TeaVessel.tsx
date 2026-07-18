@@ -83,7 +83,7 @@ export function TeaVessel({ color, leafExpansion, aroma }: TeaVesselProps) {
         </defs>
 
         {/* steam */}
-        <g opacity={steamOpacity} className="text-stone-400 dark:text-stone-500">
+        <g opacity={steamOpacity} className="text-stone-400">
           <path
             d="M85,36 C80,26 92,20 86,8"
             fill="none"
@@ -122,7 +122,7 @@ export function TeaVessel({ color, leafExpansion, aroma }: TeaVesselProps) {
           fill="none"
           stroke="currentColor"
           strokeWidth={2.5}
-          className="text-stone-300 dark:text-stone-600"
+          className="text-stone-300"
         />
         <path
           d="M40,40 L160,40 C160,40 152,210 148,215 C140,224 60,224 52,215 C48,210 40,40 40,40 Z"
@@ -130,7 +130,7 @@ export function TeaVessel({ color, leafExpansion, aroma }: TeaVesselProps) {
         />
 
         {/* graduation ticks, laboratory glassware detail */}
-        <g className="text-stone-300 dark:text-stone-600">
+        <g className="text-stone-300">
           {GRADUATIONS.map(({ y, label }) => (
             <g key={y}>
               <line x1={148} y1={y} x2={158} y2={y} stroke="currentColor" strokeWidth={1.5} />
@@ -148,7 +148,7 @@ export function TeaVessel({ color, leafExpansion, aroma }: TeaVesselProps) {
           stroke="currentColor"
           strokeWidth={2.5}
           strokeLinecap="round"
-          className="text-stone-300 dark:text-stone-600"
+          className="text-stone-300"
         />
 
         {/* ground shadow */}

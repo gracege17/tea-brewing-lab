@@ -16,14 +16,14 @@ function App() {
   const state = useMemo(() => getBrewState(seconds, water), [seconds, water])
 
   return (
-    <div className="min-h-svh bg-stone-50 text-stone-900 dark:bg-stone-950 dark:text-stone-100">
-      <header className="border-b border-stone-200 dark:border-stone-800">
+    <div className="min-h-svh bg-stone-50 text-stone-900">
+      <header className="border-b border-stone-200">
         <div className="mx-auto max-w-5xl px-4 py-5">
           <p className="text-xs font-medium tracking-wide text-stone-400 uppercase">
             Tea Brewing Lab
           </p>
           <h1 className="text-xl font-medium">Anxi Tieguanyin</h1>
-          <p className="mt-1 font-mono text-xs text-stone-400 dark:text-stone-500">
+          <p className="mt-1 font-mono text-xs text-stone-400">
             {BREW_PARAMS.leafWeight} leaves · {BREW_PARAMS.waterVolume} water · {BREW_PARAMS.temperature}
           </p>
         </div>
@@ -45,14 +45,14 @@ function App() {
           <BrewingExplanation state={state} />
 
           <div>
-            <h2 className="mb-3 text-sm font-medium text-stone-800 dark:text-stone-200">
+            <h2 className="mb-3 text-sm font-medium text-stone-800">
               Flavor profile
             </h2>
             <FlavorDimensions state={state} />
           </div>
 
           <div>
-            <h2 className="mb-3 text-sm font-medium text-stone-800 dark:text-stone-200">
+            <h2 className="mb-3 text-sm font-medium text-stone-800">
               Water
             </h2>
             <WaterSelector value={water} onChange={setWater} />

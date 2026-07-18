@@ -11,16 +11,16 @@ function DimensionRow({ label, value, detail }: DimensionRowProps) {
   return (
     <div>
       <div className="flex items-baseline justify-between text-sm">
-        <span className="font-medium text-stone-700 dark:text-stone-300">{label}</span>
+        <span className="font-medium text-stone-700">{label}</span>
         <span className="font-mono text-xs tabular-nums text-stone-400">{value.toFixed(1)}</span>
       </div>
-      <div className="mt-1 h-1.5 w-full rounded-full bg-stone-200 dark:bg-stone-800">
+      <div className="mt-1 h-1.5 w-full rounded-full bg-stone-200">
         <div
-          className="h-full rounded-full bg-stone-700 transition-[width] duration-200 ease-out dark:bg-stone-300"
+          className="h-full rounded-full bg-stone-700 transition-[width] duration-200 ease-out"
           style={{ width: `${pct}%` }}
         />
       </div>
-      {detail && <p className="mt-1 text-xs text-stone-500 dark:text-stone-500">{detail}</p>}
+      {detail && <p className="mt-1 text-xs text-stone-500">{detail}</p>}
     </div>
   )
 }
