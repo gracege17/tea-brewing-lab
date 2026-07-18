@@ -1,32 +1,25 @@
-# React + TypeScript + Vite
+# Tea Brewing Lab
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An interactive MVP showing how time and water change a single cup of tea:
+Anxi Tieguanyin (清香型), fixed at 5g leaves / 100ml water / 90°C. Drag the
+timeline (0–8min) to see tea color, leaf expansion, aroma, and four other
+flavor dimensions change — the first ~2 minutes model a normal steep, the
+rest demonstrates over-extraction. Switch between Soft / Balanced / Hard
+water to see how mineral content shifts the same brew.
 
-Currently, two official plugins are available:
+Built with Vite + React + TypeScript + Tailwind CSS. No backend — all
+brewing data lives in `src/data/` and is interpolated client-side
+(`src/lib/brew.ts`).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Develop
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Build
+
+```bash
+npm run build
+```
